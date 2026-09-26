@@ -36,8 +36,152 @@
       </div>
     </div>
   </header>
+    <main>
+    <div class="container">
+      <div class="row">
+
+        <!-- User 1 -->
+        <div class="col-md-4">
+          <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover"
+            data-bs-placement="top" data-bs-content="Email: john@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="John Doe"
+                       class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>John Doe</h4>
+                  <h6>Troy, MI</h6>
+                  <span class="badge bg-primary">Nature</span>
+                  <span class="badge bg-primary">Travel</span>
+                  <span class="badge bg-primary">Sport</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <!-- User 2 -->
+        <div class="col-md-4">
+          <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="top" data-bs-content="Email: lehla@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/women/75.jpg" alt="Lehla Nichols"
+                       class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Lehla Nichols</h4>
+                  <h6>Fort Worth, TX</h6>
+                  <span class="badge bg-primary">Fashion</span>
+                  <span class="badge bg-primary">STEM</span>
+                  <span class="badge bg-primary">Architecture</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <!-- User 3 -->
+        <div class="col-md-4">
+          <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="top" data-bs-content="Email: annie@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Annie Rice"
+                       class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Annie Rice</h4>
+                  <h6>Troy, MI</h6>
+                  <span class="badge bg-primary">Electronics</span>
+                  <span class="badge bg-primary">Tech</span>
+                  <span class="badge bg-primary">Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-- User 4 -->
+        <div class="col-md-4">
+          <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="top" data-bs-content="Email: ann@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ann Green"
+                       class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Ann Green</h4>
+                  <h6>Gainesville, FL</h6>
+                  <span class="badge bg-primary">Nature</span>
+                  <span class="badge bg-primary">Shopping</span>
+                  <span class="badge bg-primary">Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- User 5 -->
+        <div class="col-md-4">
+          <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="top" data-bs-content="Email: mikey@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mikey Cole"
+                       class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Mikey Cole</h4>
+                  <h6>Los Angeles, CA</h6>
+                  <span class="badge bg-primary">Sport</span>
+                  <span class="badge bg-primary">STEM</span>
+                  <span class="badge bg-primary">Karaoke</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- User 6 -->
+        <div class="col-md-4">
+          <div class="card mb-3" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="top" data-bs-content="Email: arthur@gmail.com">
+            <div class="card-body">
+              <div class="d-flex gap-3">
+                <div class="user-img">
+                  <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Arthur Hikks"
+                       class="rounded-circle img-fluid">
+                </div>
+                <div class="user-info">
+                  <h4>Arthur Hikks</h4>
+                  <h6>San Francisco, CA</h6>
+                  <span class="badge bg-primary">Electronics</span>
+                  <span class="badge bg-primary">STEM</span>
+                  <span class="badge bg-primary">Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/darkmodetoggle.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(
+      el => new bootstrap.Popover(el)
+    );
+  </script>
 </body>
 </html>
